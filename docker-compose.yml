@@ -36,7 +36,7 @@ services:
       - 443:443
     volumes:
       - react-volume:/var/www/html
-      - ./certs:/etc/nginx/certs
+      - ./nginx/certs:/etc/nginx/certs
     depends_on:
       - postgres
       - gym-node
