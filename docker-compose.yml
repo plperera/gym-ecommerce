@@ -37,7 +37,6 @@ services:
     volumes:
       - react-volume:/var/www/html
       - ./certs:/etc/nginx/certs
-      - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
       - postgres
       - gym-node
